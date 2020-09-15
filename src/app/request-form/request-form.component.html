@@ -1,30 +1,61 @@
 <app-modal>
   <div modal-header>{{stationId}}</div>
   <div modal-body>
-    <label for="cars">Choose a car:</label>
-    <select name="cars" id="cars">
-      <option value="changeInfo">Изменить информацию</option>
-      <option value="changeSocket">Изменить Сокет</option>
-      <option value="deleteObject">Удалить объект</option>
-    </select>
+    <p>{{currentStation.operator}}</p>
 
     <form #myForm="ngForm" novalidate (ngSubmit)="onSubmit(myForm)">
-      <div class="form-group">
-        <label>Имя</label>
-        <input class="form-control" name="name" />
+
+      <label for="requestTypesSelect">Выберите тип заявки:</label>
+      <select  name="requestTypeSelect" id="requestTypesSelect" (change)="assignRequestType($event.target.value)">
+        <option *ngFor="let type of requestTypes" [value]="type.id" >{{ type.name }}</option>
+      </select>
+
+      <div id="changeInfoForm" *ngIf="currentRequestType == 1">
+        <div class="form-group">
+        <label for="description">Описание:</label>
+        <input ngModel type="text" id="description" name="description" ><p>{{currentStation.operator}}</p><br><br>
+        </div>
+          <div class="form-group">
+            <label for="site">Сайт</label>
+            <input ngModel type="text" id="site" name="site" ><br><br>
+          </div>
+            <div class="form-group">
+            <label for="operator">Оператор</label>
+            <input ngModel type="text" id="operator" name="operator" ><br><br>
+            </div>
       </div>
+
+      <div id="changeSocketForm" *ngIf="currentRequestType == 2">
+        <div class="form-group row">
+          <label for="type2">Type2</label>
+          <input required pattern="[0-9]{10}" ngModel type="number" id="type2" name="type2" min="0" value="0">
+        </div>
+        <div class="form-group">
+          <label for="yazaki">Yazaki</label>
+          <input ngModel type="number" id="yazaki" name="yazaki" min="0" value="0">
+        </div>
+        <div class="form-group">
+          <label for="schuko">Schuko</label>
+          <input  ngModel type="number" id="schuko" name="schuko" min="0" value="0" autocomplete="off">
+        </div>
+        </div>
+      <!--      <div class="form-group">-->
+<!--        <label>Имя</label>-->
+<!--        <input class="form-control" name="name" />-->
+<!--      </div>-->
+<!--      <div class="form-group">-->
+<!--        <label>Email</label>-->
+<!--        <input class="form-control" name="email" />-->
+<!--      </div>-->
+<!--      <div class="form-group">-->
+<!--        <label>Телефон</label>-->
+<!--        <input class="form-control" name="phone" ngModel-->
+<!--               required pattern="[0-9]{10}" />-->
+<!--      </div>-->
       <div class="form-group">
-        <label>Email</label>
-        <input class="form-control" name="email" />
+        <input type="submit" [disabled]="myForm.invalid || !myForm.dirty" class="btn btn-default" value="Отправить" />
       </div>
-      <div class="form-group">
-        <label>Телефон</label>
-        <input class="form-control" name="phone" ngModel
-               required pattern="[0-9]{10}" />
-      </div>
-      <div class="form-group">
-        <input type="submit" [disabled]="myForm.invalid" class="btn btn-default" value="Отправить" />
-      </div>
-    </form>`  </div>
+    </form>
+  </div>
   <div modal-footer>Login footer</div>
 </app-modal>
