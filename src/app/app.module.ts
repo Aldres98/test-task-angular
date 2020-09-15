@@ -3,14 +3,24 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MapComponent } from './map/map.component';
+import { ChangeRequestComponent } from './change-request/change-request.component';
+import { ModalComponent } from './modal/modal.component';
+import { RequestFormComponent } from './request-form/request-form.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MapComponent,
+    ChangeRequestComponent,
+    ModalComponent,
+    RequestFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

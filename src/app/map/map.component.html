@@ -1,0 +1,23 @@
+
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Operator</th>
+      <th>socket:type2</th>
+      <th>socket:yazaki</th>
+      <th>socket:schuko</th>
+      <th>description</th>
+      <th>website</th>
+    </tr>
+    <tr *ngFor="let feature of features">
+      <td>{{feature.properties["@id"]}}</td>
+      <td>{{feature.properties["operator"]}}</td>
+      <td>{{feature.properties["socket:type2"]}}</td>
+      <td>{{feature.properties["socket:yazaki"]}}</td>
+      <td>{{feature.properties["socket:schuko"]}}</td>
+      <td>{{feature.properties["description"]}}</td>
+      <td>{{feature.properties["website"]}}</td>
+    </tr>
+  </table>
+
+<div id="map-container" class="map-container"></div>

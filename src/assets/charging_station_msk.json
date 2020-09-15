@@ -1,0 +1,247 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2020-08-20T11:51:03Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2914048737",
+        "operator": "Револьта",
+        "socket:type2": "1",
+        "socket:yazaki": "1",
+        "website": "http://revolta.ru"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.7068761,
+          55.5821559
+        ]
+      },
+      "id": "node/2914048737"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2914048739",
+        "operator": "Револьта",
+        "socket:schuko": "2",
+        "socket:type2": "2",
+        "website": "http://revolta.ru"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.7082921,
+          55.7485607
+        ]
+      },
+      "id": "node/2914048739"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2914048740",
+        "operator": "Револьта",
+        "socket:schuko": "1",
+        "socket:type2": "1",
+        "website": "http://revolta.ru"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.4814863,
+          55.8328857
+        ]
+      },
+      "id": "node/2914048740"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3775034863",
+        "operator": "Московский электротранспорт"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.6359965,
+          55.7342093
+        ]
+      },
+      "id": "node/3775034863"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4489999489",
+        "operator": "Мосэнерго"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.6098306,
+          55.7630944
+        ]
+      },
+      "id": "node/4489999489"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4703123846",
+        "operator": "Мосэнерго",
+        "socket:type2": "3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.6177858,
+          55.7622639
+        ]
+      },
+      "id": "node/4703123846"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4776464330",
+        "description": "бесконтактные карты оплаты",
+        "operator": "Мосэнерго"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.6200503,
+          55.7117458
+        ]
+      },
+      "id": "node/4776464330"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4776464381",
+        "description": "бесконтактные карты оплаты",
+        "operator": "Мосэнерго"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.6202195,
+          55.711742
+        ]
+      },
+      "id": "node/4776464381"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4902990461",
+        "operator": "Мосэнерго",
+        "socket:type2": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.6280112,
+          55.7557797
+        ]
+      },
+      "id": "node/4902990461"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5533073863",
+        "operator": "Мосэнерго",
+        "socket:type2": "1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.605253,
+          55.7701659
+        ]
+      },
+      "id": "node/5533073863"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5923035838",
+        "operator": "Мосэнерго"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.6462965,
+          55.7610722
+        ]
+      },
+      "id": "node/5923035838"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6251478417",
+        "operator": "Газпром"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.5646183,
+          55.7673351
+        ]
+      },
+      "id": "node/6251478417"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6303242539",
+        "operator": "Мосэнерго"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.6322307,
+          55.7466055
+        ]
+      },
+      "id": "node/6303242539"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7046379878",
+        "operator": "Мосэнерго"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.6578592,
+          55.7704034
+        ]
+      },
+      "id": "node/7046379878"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7799623225",
+        "operator": "Мосэнерго"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          37.5937503,
+          55.7143189
+        ]
+      },
+      "id": "node/7799623225"
+    }
+  ]
+}
